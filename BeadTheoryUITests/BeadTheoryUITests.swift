@@ -1,6 +1,6 @@
 //
-//  TwohyTutorialTwoUITests.swift
-//  TwohyTutorialTwoUITests
+//  BeadTheoryUITests.swift
+//  BeadTheoryUITests
 //
 //  Created by Kevin Stumph on 11/30/18.
 //  Copyright © 2018 Kevin Stumph. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class TwohyTutorialTwoUITests: XCTestCase {
+class BeadTheoryUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TwohyTutorialTwo.xcodeproj">
+      location = "self:/Users/kvstumph/mystuff/projects/metal/BeadTheory/BeadTheory.xcodeproj">
    </FileRef>
 </Workspace>

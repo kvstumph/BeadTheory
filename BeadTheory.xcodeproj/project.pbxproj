@@ -32,11 +32,11 @@
 		CB33B75721BC5256003EAF53 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB33B75621BC5256003EAF53 /* CameraManager.swift */; };
 		CB33B75921BCB6FF003EAF53 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB33B75821BCB6FF003EAF53 /* Cube.swift */; };
 		CB427F3021B1CAB100CC911B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F2F21B1CAB100CC911B /* AppDelegate.swift */; };
-		CB427F3521B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB427F3321B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodeld */; };
+		CB427F3521B1CAB100CC911B /* BeadTheory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB427F3321B1CAB100CC911B /* BeadTheory.xcdatamodeld */; };
 		CB427F3721B1CAB300CC911B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB427F3621B1CAB300CC911B /* Assets.xcassets */; };
 		CB427F3A21B1CAB300CC911B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB427F3821B1CAB300CC911B /* Main.storyboard */; };
-		CB427F4621B1CAB300CC911B /* TwohyTutorialTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F4521B1CAB300CC911B /* TwohyTutorialTwoTests.swift */; };
-		CB427F5121B1CAB300CC911B /* TwohyTutorialTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F5021B1CAB300CC911B /* TwohyTutorialTwoUITests.swift */; };
+		CB427F4621B1CAB300CC911B /* BeadTheoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F4521B1CAB300CC911B /* BeadTheoryTests.swift */; };
+		CB427F5121B1CAB300CC911B /* BeadTheoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F5021B1CAB300CC911B /* BeadTheoryUITests.swift */; };
 		CB427F6021B263F200CC911B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F5F21B263F200CC911B /* GameView.swift */; };
 		CB427F6221B2695700CC911B /* MyShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB427F6121B2695700CC911B /* MyShaders.metal */; };
 		CB7517C021C4EBC800C30CAB /* DepthStencilStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7517BF21C4EBC800C30CAB /* DepthStencilStateLibrary.swift */; };
@@ -51,14 +51,14 @@
 			containerPortal = CB427F2421B1CAB100CC911B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CB427F2B21B1CAB100CC911B;
-			remoteInfo = TwohyTutorialTwo;
+			remoteInfo = BeadTheory;
 		};
 		CB427F4D21B1CAB300CC911B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB427F2421B1CAB100CC911B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CB427F2B21B1CAB100CC911B;
-			remoteInfo = TwohyTutorialTwo;
+			remoteInfo = BeadTheory;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,18 +87,18 @@
 		CB33B75421BC4D3F003EAF53 /* DebugCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugCamera.swift; sourceTree = "<group>"; };
 		CB33B75621BC5256003EAF53 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		CB33B75821BCB6FF003EAF53 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
-		CB427F2C21B1CAB100CC911B /* TwohyTutorialTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwohyTutorialTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB427F2C21B1CAB100CC911B /* BeadTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeadTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB427F2F21B1CAB100CC911B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB427F3421B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwohyTutorialTwo.xcdatamodel; sourceTree = "<group>"; };
+		CB427F3421B1CAB100CC911B /* BeadTheory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeadTheory.xcdatamodel; sourceTree = "<group>"; };
 		CB427F3621B1CAB300CC911B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB427F3921B1CAB300CC911B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB427F3B21B1CAB300CC911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB427F3C21B1CAB300CC911B /* TwohyTutorialTwo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwohyTutorialTwo.entitlements; sourceTree = "<group>"; };
-		CB427F4121B1CAB300CC911B /* TwohyTutorialTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwohyTutorialTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB427F4521B1CAB300CC911B /* TwohyTutorialTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwohyTutorialTwoTests.swift; sourceTree = "<group>"; };
+		CB427F3C21B1CAB300CC911B /* BeadTheory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeadTheory.entitlements; sourceTree = "<group>"; };
+		CB427F4121B1CAB300CC911B /* BeadTheoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeadTheoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB427F4521B1CAB300CC911B /* BeadTheoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadTheoryTests.swift; sourceTree = "<group>"; };
 		CB427F4721B1CAB300CC911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB427F4C21B1CAB300CC911B /* TwohyTutorialTwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwohyTutorialTwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB427F5021B1CAB300CC911B /* TwohyTutorialTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwohyTutorialTwoUITests.swift; sourceTree = "<group>"; };
+		CB427F4C21B1CAB300CC911B /* BeadTheoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeadTheoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB427F5021B1CAB300CC911B /* BeadTheoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadTheoryUITests.swift; sourceTree = "<group>"; };
 		CB427F5221B1CAB300CC911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB427F5F21B263F200CC911B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		CB427F6121B2695700CC911B /* MyShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MyShaders.metal; sourceTree = "<group>"; };
@@ -255,9 +255,9 @@
 		CB427F2321B1CAB100CC911B = {
 			isa = PBXGroup;
 			children = (
-				CB427F2E21B1CAB100CC911B /* TwohyTutorialTwo */,
-				CB427F4421B1CAB300CC911B /* TwohyTutorialTwoTests */,
-				CB427F4F21B1CAB300CC911B /* TwohyTutorialTwoUITests */,
+				CB427F2E21B1CAB100CC911B /* BeadTheory */,
+				CB427F4421B1CAB300CC911B /* BeadTheoryTests */,
+				CB427F4F21B1CAB300CC911B /* BeadTheoryUITests */,
 				CB427F2D21B1CAB100CC911B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -265,14 +265,14 @@
 		CB427F2D21B1CAB100CC911B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB427F2C21B1CAB100CC911B /* TwohyTutorialTwo.app */,
-				CB427F4121B1CAB300CC911B /* TwohyTutorialTwoTests.xctest */,
-				CB427F4C21B1CAB300CC911B /* TwohyTutorialTwoUITests.xctest */,
+				CB427F2C21B1CAB100CC911B /* BeadTheory.app */,
+				CB427F4121B1CAB300CC911B /* BeadTheoryTests.xctest */,
+				CB427F4C21B1CAB300CC911B /* BeadTheoryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB427F2E21B1CAB100CC911B /* TwohyTutorialTwo */ = {
+		CB427F2E21B1CAB100CC911B /* BeadTheory */ = {
 			isa = PBXGroup;
 			children = (
 				CB7517C121C583B700C30CAB /* Utils */,
@@ -285,33 +285,33 @@
 				CB33B72321B47A28003EAF53 /* Display */,
 				CB427F5E21B260F000CC911B /* Other Files */,
 			);
-			path = TwohyTutorialTwo;
+			path = BeadTheory;
 			sourceTree = "<group>";
 		};
-		CB427F4421B1CAB300CC911B /* TwohyTutorialTwoTests */ = {
+		CB427F4421B1CAB300CC911B /* BeadTheoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB427F4521B1CAB300CC911B /* TwohyTutorialTwoTests.swift */,
+				CB427F4521B1CAB300CC911B /* BeadTheoryTests.swift */,
 				CB427F4721B1CAB300CC911B /* Info.plist */,
 			);
-			path = TwohyTutorialTwoTests;
+			path = BeadTheoryTests;
 			sourceTree = "<group>";
 		};
-		CB427F4F21B1CAB300CC911B /* TwohyTutorialTwoUITests */ = {
+		CB427F4F21B1CAB300CC911B /* BeadTheoryUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CB427F5021B1CAB300CC911B /* TwohyTutorialTwoUITests.swift */,
+				CB427F5021B1CAB300CC911B /* BeadTheoryUITests.swift */,
 				CB427F5221B1CAB300CC911B /* Info.plist */,
 			);
-			path = TwohyTutorialTwoUITests;
+			path = BeadTheoryUITests;
 			sourceTree = "<group>";
 		};
 		CB427F5E21B260F000CC911B /* Other Files */ = {
 			isa = PBXGroup;
 			children = (
 				CB427F3B21B1CAB300CC911B /* Info.plist */,
-				CB427F3C21B1CAB300CC911B /* TwohyTutorialTwo.entitlements */,
-				CB427F3321B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodeld */,
+				CB427F3C21B1CAB300CC911B /* BeadTheory.entitlements */,
+				CB427F3321B1CAB100CC911B /* BeadTheory.xcdatamodeld */,
 				CB427F2F21B1CAB100CC911B /* AppDelegate.swift */,
 				CB427F3621B1CAB300CC911B /* Assets.xcassets */,
 			);
@@ -329,9 +329,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB427F2B21B1CAB100CC911B /* TwohyTutorialTwo */ = {
+		CB427F2B21B1CAB100CC911B /* BeadTheory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB427F5521B1CAB300CC911B /* Build configuration list for PBXNativeTarget "TwohyTutorialTwo" */;
+			buildConfigurationList = CB427F5521B1CAB300CC911B /* Build configuration list for PBXNativeTarget "BeadTheory" */;
 			buildPhases = (
 				CB427F2821B1CAB100CC911B /* Sources */,
 				CB427F2921B1CAB100CC911B /* Frameworks */,
@@ -341,14 +341,14 @@
 			);
 			dependencies = (
 			);
-			name = TwohyTutorialTwo;
-			productName = TwohyTutorialTwo;
-			productReference = CB427F2C21B1CAB100CC911B /* TwohyTutorialTwo.app */;
+			name = BeadTheory;
+			productName = BeadTheory;
+			productReference = CB427F2C21B1CAB100CC911B /* BeadTheory.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB427F4021B1CAB300CC911B /* TwohyTutorialTwoTests */ = {
+		CB427F4021B1CAB300CC911B /* BeadTheoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB427F5821B1CAB300CC911B /* Build configuration list for PBXNativeTarget "TwohyTutorialTwoTests" */;
+			buildConfigurationList = CB427F5821B1CAB300CC911B /* Build configuration list for PBXNativeTarget "BeadTheoryTests" */;
 			buildPhases = (
 				CB427F3D21B1CAB300CC911B /* Sources */,
 				CB427F3E21B1CAB300CC911B /* Frameworks */,
@@ -359,14 +359,14 @@
 			dependencies = (
 				CB427F4321B1CAB300CC911B /* PBXTargetDependency */,
 			);
-			name = TwohyTutorialTwoTests;
-			productName = TwohyTutorialTwoTests;
-			productReference = CB427F4121B1CAB300CC911B /* TwohyTutorialTwoTests.xctest */;
+			name = BeadTheoryTests;
+			productName = BeadTheoryTests;
+			productReference = CB427F4121B1CAB300CC911B /* BeadTheoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB427F4B21B1CAB300CC911B /* TwohyTutorialTwoUITests */ = {
+		CB427F4B21B1CAB300CC911B /* BeadTheoryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB427F5B21B1CAB300CC911B /* Build configuration list for PBXNativeTarget "TwohyTutorialTwoUITests" */;
+			buildConfigurationList = CB427F5B21B1CAB300CC911B /* Build configuration list for PBXNativeTarget "BeadTheoryUITests" */;
 			buildPhases = (
 				CB427F4821B1CAB300CC911B /* Sources */,
 				CB427F4921B1CAB300CC911B /* Frameworks */,
@@ -377,9 +377,9 @@
 			dependencies = (
 				CB427F4E21B1CAB300CC911B /* PBXTargetDependency */,
 			);
-			name = TwohyTutorialTwoUITests;
-			productName = TwohyTutorialTwoUITests;
-			productReference = CB427F4C21B1CAB300CC911B /* TwohyTutorialTwoUITests.xctest */;
+			name = BeadTheoryUITests;
+			productName = BeadTheoryUITests;
+			productReference = CB427F4C21B1CAB300CC911B /* BeadTheoryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -405,7 +405,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB427F2721B1CAB100CC911B /* Build configuration list for PBXProject "TwohyTutorialTwo" */;
+			buildConfigurationList = CB427F2721B1CAB100CC911B /* Build configuration list for PBXProject "BeadTheory" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -418,9 +418,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB427F2B21B1CAB100CC911B /* TwohyTutorialTwo */,
-				CB427F4021B1CAB300CC911B /* TwohyTutorialTwoTests */,
-				CB427F4B21B1CAB300CC911B /* TwohyTutorialTwoUITests */,
+				CB427F2B21B1CAB100CC911B /* BeadTheory */,
+				CB427F4021B1CAB300CC911B /* BeadTheoryTests */,
+				CB427F4B21B1CAB300CC911B /* BeadTheoryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -483,7 +483,7 @@
 				CB33B71F21B475F1003EAF53 /* Types.swift in Sources */,
 				CB33B74E21B644F5003EAF53 /* Keycodes.swift in Sources */,
 				CBFF0D1421C5959900095020 /* CubeCollection.swift in Sources */,
-				CB427F3521B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodeld in Sources */,
+				CB427F3521B1CAB100CC911B /* BeadTheory.xcdatamodeld in Sources */,
 				CB33B75321BC4C25003EAF53 /* Camera.swift in Sources */,
 				CB33B73821B5FA31003EAF53 /* Pointer.swift in Sources */,
 				CB33B74621B619E3003EAF53 /* SandboxScene.swift in Sources */,
@@ -495,7 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB427F4621B1CAB300CC911B /* TwohyTutorialTwoTests.swift in Sources */,
+				CB427F4621B1CAB300CC911B /* BeadTheoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB427F5121B1CAB300CC911B /* TwohyTutorialTwoUITests.swift in Sources */,
+				CB427F5121B1CAB300CC911B /* BeadTheoryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,12 +512,12 @@
 /* Begin PBXTargetDependency section */
 		CB427F4321B1CAB300CC911B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB427F2B21B1CAB100CC911B /* TwohyTutorialTwo */;
+			target = CB427F2B21B1CAB100CC911B /* BeadTheory */;
 			targetProxy = CB427F4221B1CAB300CC911B /* PBXContainerItemProxy */;
 		};
 		CB427F4E21B1CAB300CC911B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB427F2B21B1CAB100CC911B /* TwohyTutorialTwo */;
+			target = CB427F2B21B1CAB100CC911B /* BeadTheory */;
 			targetProxy = CB427F4D21B1CAB300CC911B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -653,16 +653,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "TwohyTutorialTwo/Other Files/TwohyTutorialTwo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "BeadTheory/Other Files/BeadTheory.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NHE68VNKB;
-				INFOPLIST_FILE = "$(SRCROOT)/TwohyTutorialTwo/Other Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BeadTheory/Other Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.TwohyTutorialTwo;
+				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.BeadTheory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -672,16 +672,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "TwohyTutorialTwo/Other Files/TwohyTutorialTwo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "BeadTheory/Other Files/BeadTheory.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NHE68VNKB;
-				INFOPLIST_FILE = "$(SRCROOT)/TwohyTutorialTwo/Other Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BeadTheory/Other Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.TwohyTutorialTwo;
+				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.BeadTheory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -695,16 +695,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NHE68VNKB;
-				INFOPLIST_FILE = TwohyTutorialTwoTests/Info.plist;
+				INFOPLIST_FILE = BeadTheoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.TwohyTutorialTwoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.BeadTheoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwohyTutorialTwo.app/Contents/MacOS/TwohyTutorialTwo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeadTheory.app/Contents/MacOS/BeadTheory";
 			};
 			name = Debug;
 		};
@@ -716,16 +716,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NHE68VNKB;
-				INFOPLIST_FILE = TwohyTutorialTwoTests/Info.plist;
+				INFOPLIST_FILE = BeadTheoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.TwohyTutorialTwoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.BeadTheoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwohyTutorialTwo.app/Contents/MacOS/TwohyTutorialTwo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeadTheory.app/Contents/MacOS/BeadTheory";
 			};
 			name = Release;
 		};
@@ -736,16 +736,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NHE68VNKB;
-				INFOPLIST_FILE = TwohyTutorialTwoUITests/Info.plist;
+				INFOPLIST_FILE = BeadTheoryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.TwohyTutorialTwoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.BeadTheoryUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = TwohyTutorialTwo;
+				TEST_TARGET_NAME = BeadTheory;
 			};
 			name = Debug;
 		};
@@ -756,23 +756,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NHE68VNKB;
-				INFOPLIST_FILE = TwohyTutorialTwoUITests/Info.plist;
+				INFOPLIST_FILE = BeadTheoryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.TwohyTutorialTwoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kvs.test.BeadTheoryUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = TwohyTutorialTwo;
+				TEST_TARGET_NAME = BeadTheory;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB427F2721B1CAB100CC911B /* Build configuration list for PBXProject "TwohyTutorialTwo" */ = {
+		CB427F2721B1CAB100CC911B /* Build configuration list for PBXProject "BeadTheory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB427F5321B1CAB300CC911B /* Debug */,
@@ -781,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB427F5521B1CAB300CC911B /* Build configuration list for PBXNativeTarget "TwohyTutorialTwo" */ = {
+		CB427F5521B1CAB300CC911B /* Build configuration list for PBXNativeTarget "BeadTheory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB427F5621B1CAB300CC911B /* Debug */,
@@ -790,7 +790,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB427F5821B1CAB300CC911B /* Build configuration list for PBXNativeTarget "TwohyTutorialTwoTests" */ = {
+		CB427F5821B1CAB300CC911B /* Build configuration list for PBXNativeTarget "BeadTheoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB427F5921B1CAB300CC911B /* Debug */,
@@ -799,7 +799,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB427F5B21B1CAB300CC911B /* Build configuration list for PBXNativeTarget "TwohyTutorialTwoUITests" */ = {
+		CB427F5B21B1CAB300CC911B /* Build configuration list for PBXNativeTarget "BeadTheoryUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB427F5C21B1CAB300CC911B /* Debug */,
@@ -811,13 +811,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CB427F3321B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodeld */ = {
+		CB427F3321B1CAB100CC911B /* BeadTheory.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CB427F3421B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodel */,
+				CB427F3421B1CAB100CC911B /* BeadTheory.xcdatamodel */,
 			);
-			currentVersion = CB427F3421B1CAB100CC911B /* TwohyTutorialTwo.xcdatamodel */;
-			path = TwohyTutorialTwo.xcdatamodeld;
+			currentVersion = CB427F3421B1CAB100CC911B /* BeadTheory.xcdatamodel */;
+			path = BeadTheory.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
