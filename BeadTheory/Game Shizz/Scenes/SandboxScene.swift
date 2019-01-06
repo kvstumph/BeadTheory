@@ -7,9 +7,10 @@ class SandboxScene: Scene {
     override func buildScene() {
         addCamera(debugCamera)
         
-        debugCamera.position.z = 100
+        debugCamera.position.z = 30
         
-        addCubes()
+//        addCubes()
+        addIcosohedrons()
     }
     
     var cubeCollection: CubeCollection!
@@ -18,8 +19,15 @@ class SandboxScene: Scene {
         addChild(cubeCollection)
     }
     
+    var icosohedronCollection: IcosohedronCollection!
+    func addIcosohedrons() {
+        icosohedronCollection = IcosohedronCollection(icosohedronsWide: 4, icosohedronsHigh: 4, icosohedronsBack: 4)
+        addChild(icosohedronCollection)
+    }
+    
     override func update(deltaTime: Float) {
-        cubeCollection.rotation.z += deltaTime
+//        cubeCollection.rotation.z += deltaTime
+//        icosohedronCollection.rotation.z += deltaTime / 10.0
         
         super.update(deltaTime: deltaTime)
     }

@@ -25,7 +25,7 @@ class CubeCollection: InstancedGameObject {
         let halfBack: Float = Float(cubesBack / 2)
         
         var index: Int = 0
-        let gap: Float = cos(time / 2) * 10
+        let gap: Float = 3 // cos(time / 2) * 10
         for y in stride(from: -halfHigh, to: halfHigh, by: 1.0) {
             let posY = Float(y * gap)
             for x in stride(from: -halfWide, to: halfWide, by: 1.0) {

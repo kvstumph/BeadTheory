@@ -4,6 +4,7 @@ enum MeshTypes {
     case Triangle_Custom
     case Quad_Custom
     case Cube_Custom
+    case Icosohedron_Custom
 }
 
 class MeshLibrary {
@@ -18,6 +19,7 @@ class MeshLibrary {
         meshes.updateValue(Triangle_CustomMesh(), forKey: .Triangle_Custom)
         meshes.updateValue(Quad_CustomMesh(), forKey: .Quad_Custom)
         meshes.updateValue(Cube_CustomMesh(), forKey: .Cube_Custom)
+        meshes.updateValue(Icosohedron_CustomMesh(), forKey: .Icosohedron_Custom)
     }
     
     public static func Mesh(_ meshType: MeshTypes)->Mesh {
@@ -144,5 +146,98 @@ class Cube_CustomMesh: CustomMesh {
             Vertex(position: float3( 1.0,-1.0, 1.0), color: float4(1.0, 0.0, 1.0, 1.0))
         ]
     }
-    
+}
+
+class Icosohedron_CustomMesh: CustomMesh {
+    override func createVertices() {
+
+        // blog.andreaskahler.com
+        let t = Float((1.0 + sqrt(5.0)) / 2.0);
+
+        print("KVS: Creating Icosohedron!!!!")
+        vertices = [
+            // Top 5 Faces centered around ( 0.0, t, 1.0 )
+            Vertex(position: float3(0.0,t,1.0), color: float4(1.0, 0.0, 0.0, 1.0)),
+            Vertex(position: float3(-1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+
+            Vertex(position: float3(0.0,t,1.0), color: float4(1.0, 0.0, 0.0, 1.0)),
+            Vertex(position: float3(-t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+
+            Vertex(position: float3(0.0,t,1.0), color: float4(1.0, 0.0, 0.0, 1.0)),
+            Vertex(position: float3(0.0,t,-1.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+
+            Vertex(position: float3(0.0,t,1.0), color: float4(1.0, 0.0, 0.0, 1.0)),
+            Vertex(position: float3(t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(0.0,t,-1.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+
+            Vertex(position: float3(0.0,t,1.0), color: float4(1.0, 0.0, 0.0, 1.0)),
+            Vertex(position: float3(1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+
+            // Middle Strip of 10 Faces
+            Vertex(position: float3(1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(0.0,-t,1.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(0.0,-t,1.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(0.0,t,-1.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(0.0,t,-1.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(-1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(-t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(0.0,t,-1.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(-t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(-t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(-1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-t,1.0,0.0), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(-1.0,0.0,t), color: float4(0.67, 0.33, 0.33, 1.0)),
+            Vertex(position: float3(-t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(0.0,-t,1.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            // Bottom 5 Faces centered around ( 0.0, -t, -1.0 )
+            Vertex(position: float3(0.0,-t,-1.0), color: float4(0.0, 1.0, 1.0, 1.0)),
+            Vertex(position: float3(1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(-1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            
+            Vertex(position: float3(0.0,-t,-1.0), color: float4(0.0, 1.0, 1.0, 1.0)),
+            Vertex(position: float3(t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+
+            Vertex(position: float3(0.0,-t,-1.0), color: float4(0.0, 1.0, 1.0, 1.0)),
+            Vertex(position: float3(0.0,-t,1.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+
+            Vertex(position: float3(0.0,-t,-1.0), color: float4(0.0, 1.0, 1.0, 1.0)),
+            Vertex(position: float3(-t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(0.0,-t,1.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+
+            Vertex(position: float3(0.0,-t,-1.0), color: float4(0.0, 1.0, 1.0, 1.0)),
+            Vertex(position: float3(-1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
+            Vertex(position: float3(-t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+        ]
+    }
 }

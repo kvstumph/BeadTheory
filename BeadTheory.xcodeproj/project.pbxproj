@@ -39,6 +39,7 @@
 		CB427F5121B1CAB300CC911B /* BeadTheoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F5021B1CAB300CC911B /* BeadTheoryUITests.swift */; };
 		CB427F6021B263F200CC911B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB427F5F21B263F200CC911B /* GameView.swift */; };
 		CB427F6221B2695700CC911B /* MyShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CB427F6121B2695700CC911B /* MyShaders.metal */; };
+		CB506E3A21D993E200EBDC60 /* IcosohedronCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB506E3921D993E200EBDC60 /* IcosohedronCollection.swift */; };
 		CB7517C021C4EBC800C30CAB /* DepthStencilStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7517BF21C4EBC800C30CAB /* DepthStencilStateLibrary.swift */; };
 		CB7517C321C583C600C30CAB /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7517C221C583C600C30CAB /* ColorUtil.swift */; };
 		CBFF0D1221C58CC800095020 /* InstancedGameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFF0D1121C58CC800095020 /* InstancedGameObject.swift */; };
@@ -102,6 +103,7 @@
 		CB427F5221B1CAB300CC911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB427F5F21B263F200CC911B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		CB427F6121B2695700CC911B /* MyShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MyShaders.metal; sourceTree = "<group>"; };
+		CB506E3921D993E200EBDC60 /* IcosohedronCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcosohedronCollection.swift; sourceTree = "<group>"; };
 		CB7517BF21C4EBC800C30CAB /* DepthStencilStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthStencilStateLibrary.swift; sourceTree = "<group>"; };
 		CB7517C221C583C600C30CAB /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		CBFF0D1121C58CC800095020 /* InstancedGameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstancedGameObject.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				CB33B73121B4DA4D003EAF53 /* GameObject.swift */,
 				CBFF0D1121C58CC800095020 /* InstancedGameObject.swift */,
 				CBFF0D1321C5959900095020 /* CubeCollection.swift */,
+				CB506E3921D993E200EBDC60 /* IcosohedronCollection.swift */,
 				CB33B73721B5FA31003EAF53 /* Pointer.swift */,
 				CB33B75821BCB6FF003EAF53 /* Cube.swift */,
 			);
@@ -469,6 +472,7 @@
 				CB33B75021B64E4B003EAF53 /* Mouse.swift in Sources */,
 				CB33B75521BC4D3F003EAF53 /* DebugCamera.swift in Sources */,
 				CB33B72921B47F8C003EAF53 /* ShaderLibrary.swift in Sources */,
+				CB506E3A21D993E200EBDC60 /* IcosohedronCollection.swift in Sources */,
 				CB33B73421B4DCF2003EAF53 /* Renderer.swift in Sources */,
 				CB33B75921BCB6FF003EAF53 /* Cube.swift in Sources */,
 				CB33B72521B47BBF003EAF53 /* Engine.swift in Sources */,

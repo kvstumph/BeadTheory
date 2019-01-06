@@ -3,6 +3,7 @@ import MetalKit
 class Node {
     
     var position: float3 = float3(0)
+    var momentum: float3 = float3(Float.random(in: -1.0..<1.0), Float.random(in: -1.0..<1.0), Float.random(in: -1.0..<1.0))
     var scale: float3 = float3(1)
     var rotation: float3 = float3(0)
     
