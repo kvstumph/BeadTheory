@@ -20,9 +20,14 @@ class SandboxScene: Scene {
     }
     
     var icosohedronCollection: IcosohedronCollection!
+    var pointCollection: PointCollection!
     func addIcosohedrons() {
-        icosohedronCollection = IcosohedronCollection(icosohedronsWide: 4, icosohedronsHigh: 4, icosohedronsBack: 4)
+        icosohedronCollection = IcosohedronCollection(icosohedronsWide: 2, icosohedronsHigh: 2, icosohedronsBack: 2)
         addChild(icosohedronCollection)
+        
+        // TODO: Phase1 Starting point
+//        pointCollection = PointCollection(pointsWide: 4, pointsHigh: 4)
+//        addChild(pointCollection)
     }
     
     override func update(deltaTime: Float) {

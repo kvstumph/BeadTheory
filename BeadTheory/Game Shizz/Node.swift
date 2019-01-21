@@ -1,13 +1,13 @@
 import MetalKit
 
-class Node {
+class Node: Point {
     
-    var position: float3 = float3(0)
-    var momentum: float3 = float3(Float.random(in: -1.0..<1.0), Float.random(in: -1.0..<1.0), Float.random(in: -1.0..<1.0))
+//    var position: float3 = float3(0)
+//    var momentum: float3 = float3(Float.random(in: -1.0..<1.0), Float.random(in: -1.0..<1.0), Float.random(in: -1.0..<1.0))
     var scale: float3 = float3(1)
     var rotation: float3 = float3(0)
     
-    var modelMatrix: matrix_float4x4 {
+    override var modelMatrix: matrix_float4x4 {
         var modelMatrix = matrix_identity_float4x4
         
         modelMatrix.translate(direction: position)
@@ -19,25 +19,25 @@ class Node {
         return modelMatrix
     }
     
-    var children: [Node] = []
+//    var children: [Node] = []
     
-    func addChild(_ child: Node) {
-        children.append(child)
-    }
+//    func addChild(_ child: Node) {
+//        children.append(child)
+//    }
     
-    func update(deltaTime: Float) {
-        for child in children {
-            child.update(deltaTime: deltaTime)
-        }
-    }
+//    func update(deltaTime: Float) {
+//        for child in children {
+//            child.update(deltaTime: deltaTime)
+//        }
+//    }
     
-    func render(renderCommandEncoder: MTLRenderCommandEncoder) {
-        for child in children {
-            child.render(renderCommandEncoder: renderCommandEncoder)
-        }
-        
-        if let renderable = self as? Renderable {
-            renderable.doRender(renderCommandEncoder)
-        }
-    }
+//    func render(renderCommandEncoder: MTLRenderCommandEncoder) {
+//        for child in children {
+//            child.render(renderCommandEncoder: renderCommandEncoder)
+//        }
+//
+//        if let renderable = self as? Renderable {
+//            renderable.doRender(renderCommandEncoder)
+//        }
+//    }
 }

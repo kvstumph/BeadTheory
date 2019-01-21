@@ -5,6 +5,7 @@ enum MeshTypes {
     case Quad_Custom
     case Cube_Custom
     case Icosohedron_Custom
+    case Point_Custom
 }
 
 class MeshLibrary {
@@ -20,6 +21,7 @@ class MeshLibrary {
         meshes.updateValue(Quad_CustomMesh(), forKey: .Quad_Custom)
         meshes.updateValue(Cube_CustomMesh(), forKey: .Cube_Custom)
         meshes.updateValue(Icosohedron_CustomMesh(), forKey: .Icosohedron_Custom)
+        meshes.updateValue(Point_CustomMesh(), forKey: .Point_Custom)
     }
     
     public static func Mesh(_ meshType: MeshTypes)->Mesh {
@@ -34,7 +36,39 @@ protocol Mesh {
     func drawPrimitives(_ renderCommandEncoder: MTLRenderCommandEncoder)
 }
 
-class CustomMesh: Mesh {
+class PointMesh: Mesh {
+    var vertices: [Vertex]!
+    var vertexBuffer: MTLBuffer!
+    var instanceCount: Int = 1
+    var vertexCount: Int! {
+        return vertices.count
+    }
+    
+    init() {
+        createVertices()
+        createBuffers()
+    }
+    
+    func createVertices() { }
+    
+    func createBuffers() {
+        vertexBuffer = Engine.Device.makeBuffer(bytes: vertices, length: Vertex.stride(vertices.count), options: [])
+    }
+    
+    func setInstanceCount(_ count: Int) {
+        self.instanceCount = count
+    }
+    
+    func drawPrimitives(_ renderCommandEncoder: MTLRenderCommandEncoder) {
+        renderCommandEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
+        renderCommandEncoder.drawPrimitives(type: .point,
+                                            vertexStart: 0,
+                                            vertexCount: 1,
+                                            instanceCount: instanceCount)
+    }
+}
+
+class TriangleMesh: Mesh {
     var vertices: [Vertex]!
     var vertexBuffer: MTLBuffer!
     var instanceCount: Int = 1
@@ -67,7 +101,7 @@ class CustomMesh: Mesh {
     }
 }
 
-class Triangle_CustomMesh: CustomMesh {
+class Triangle_CustomMesh: TriangleMesh {
     override func createVertices() {
         print("KVS: WHY!!!!")
         vertices = [
@@ -78,7 +112,7 @@ class Triangle_CustomMesh: CustomMesh {
     }
 }
 
-class Quad_CustomMesh: CustomMesh {
+class Quad_CustomMesh: TriangleMesh {
     override func createVertices() {
         print("KVS: Quad_CustomMesh")
         vertices = [
@@ -93,7 +127,7 @@ class Quad_CustomMesh: CustomMesh {
     }
 }
 
-class Cube_CustomMesh: CustomMesh {
+class Cube_CustomMesh: TriangleMesh {
     override func createVertices() {
         print("KVS: HUH!!!!")
         vertices = [
@@ -148,7 +182,7 @@ class Cube_CustomMesh: CustomMesh {
     }
 }
 
-class Icosohedron_CustomMesh: CustomMesh {
+class Icosohedron_CustomMesh: TriangleMesh {
     override func createVertices() {
 
         // blog.andreaskahler.com
@@ -238,6 +272,23 @@ class Icosohedron_CustomMesh: CustomMesh {
             Vertex(position: float3(0.0,-t,-1.0), color: float4(0.0, 1.0, 1.0, 1.0)),
             Vertex(position: float3(-1.0,0.0,-t), color: float4(0.33, 0.67, 0.67, 1.0)),
             Vertex(position: float3(-t,-1.0,0.0), color: float4(0.33, 0.67, 0.67, 1.0)),
+        ]
+    }
+}
+
+class Point_CustomMesh: PointMesh {
+    override func drawPrimitives(_ renderCommandEncoder: MTLRenderCommandEncoder) {
+        renderCommandEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
+        renderCommandEncoder.drawPrimitives(type: .point,
+                                            vertexStart: 0,
+                                            vertexCount: 1,
+                                            instanceCount: instanceCount)
+    }
+    
+    override func createVertices() {
+        print("KVS: Creating Point!!!!")
+        vertices = [
+            Vertex(position: float3(0.0,0.0,0.0), color: float4(1.0, 0.0, 0.0, 1.0)),
         ]
     }
 }

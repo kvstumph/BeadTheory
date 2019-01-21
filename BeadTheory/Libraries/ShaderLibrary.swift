@@ -3,10 +3,12 @@ import MetalKit
 enum VertexShaderTypes {
     case Basic
     case Instanced
+    case Point
 }
 
 enum FragmentShaderTypes {
     case Basic
+    case Point
 }
 
 class ShaderLibrary {
@@ -23,10 +25,12 @@ class ShaderLibrary {
     public static func createDefaultShaders() {
         //Vertex Shaders
         vertexShaders.updateValue(Basic_VertexShader(), forKey: .Basic)
+        vertexShaders.updateValue(Point_VertexShader(), forKey: .Point)
         vertexShaders.updateValue(Instanced_VertexShader(), forKey: .Instanced)
 
         //Fragment Shaders
         fragmentShaders.updateValue(Basic_FragmentShader(), forKey: .Basic)
+        fragmentShaders.updateValue(Point_FragmentShader(), forKey: .Point)
     }
     
     public static func Vertex(_ vertexShaderType: VertexShaderTypes)->MTLFunction {
@@ -54,6 +58,16 @@ public struct Basic_VertexShader: Shader {
     }
 }
 
+public struct Point_VertexShader: Shader {
+    public var name: String = "Point Vertex Shader"
+    public var functionName: String = "point_vertex_shader"
+    public var function: MTLFunction!
+    init() {
+        function = ShaderLibrary.DefaultLibrary.makeFunction(name: functionName)
+        function?.label = name
+    }
+}
+
 public struct Instanced_VertexShader: Shader {
     public var name: String = "Instanced Vertex Shader"
     public var functionName: String = "instanced_vertex_shader"
@@ -67,6 +81,16 @@ public struct Instanced_VertexShader: Shader {
 public struct Basic_FragmentShader: Shader {
     public var name: String = "Basic Fragment Shader"
     public var functionName: String = "basic_fragment_shader"
+    public var function: MTLFunction!
+    init() {
+        function = ShaderLibrary.DefaultLibrary.makeFunction(name: functionName)
+        function?.label = name
+    }
+}
+
+public struct Point_FragmentShader: Shader {
+    public var name: String = "Point Fragment Shader"
+    public var functionName: String = "point_fragment_shader"
     public var function: MTLFunction!
     init() {
         function = ShaderLibrary.DefaultLibrary.makeFunction(name: functionName)
